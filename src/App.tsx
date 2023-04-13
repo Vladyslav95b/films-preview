@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './view/components/Header';
+
+import Contacts from './view/components/Contacts';
+import Features from './view/components/Feature';
+
+import './assets/scss/bootstrap-grid.scss';
+import Comments from './view/components/Comments';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <Header />
+            <Contacts />
+            <Features />
+            <Comments />
+        </>
+    );
 }
 
 export default App;
